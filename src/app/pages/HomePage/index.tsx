@@ -1,3 +1,4 @@
+import TodoItem from 'app/components/TodoItem';
 import TodoInput from 'app/components/TodoInput';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
@@ -26,15 +27,6 @@ const Title = styled.h1`
 
 const ToDoList = styled.div``;
 
-const ToDoItem = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 15px 25px;
-  width: 100%;
-  font-size: 1.2em;
-  border-bottom: 1px solid #eee;
-`;
-
 const ToDoCheck = styled.input`
   margin-right: 15px;
 `;
@@ -51,10 +43,22 @@ export function HomePage() {
           <Title>To Do List</Title>
           <TodoInput />
           <ToDoList>
-            <ToDoItem>
-              <ToDoCheck type="checkbox" />
-              I'm Todo
-            </ToDoItem>
+            <TodoItem
+              todo={{
+                id: '1',
+                completed: true,
+                content: 'This is to-do 1',
+                editing: false,
+              }}
+            />
+            <TodoItem
+              todo={{
+                id: '2',
+                completed: false,
+                content: 'This is to-do 2',
+                editing: false,
+              }}
+            />
           </ToDoList>
         </Box>
       </Wrapper>
