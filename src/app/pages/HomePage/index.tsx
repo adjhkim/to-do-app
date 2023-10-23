@@ -1,3 +1,4 @@
+import TodoInput from 'app/components/TodoInput';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components';
@@ -48,10 +49,11 @@ export function HomePage() {
       <Wrapper>
         <Box>
           <Title>To Do List</Title>
+          <TodoInput />
           <ToDoList>
             <ToDoItem>
               <ToDoCheck type="checkbox" />
-              나는 투두야
+              I'm Todo
             </ToDoItem>
           </ToDoList>
         </Box>
