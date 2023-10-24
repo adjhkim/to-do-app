@@ -28,7 +28,7 @@ export default function TodoInput({
         placeholder="Please write your to-do-list."
         value={content}
         onChange={e => setContent(e.target.value)}
-        onKeyPress={e => {
+        onKeyDown={e => {
           if (content === '') return;
           if (e.key !== 'Enter' && e.key !== 'NumpadEnter') return;
           setTodoList({
