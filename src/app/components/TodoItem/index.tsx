@@ -15,7 +15,7 @@ const Box = styled.div`
 const TodoContent = styled.span<{ checked: boolean }>`
   overflow: hidden;
   text-overflow: ellipsis;
-  work-wrap: break-word;
+  word-wrap: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
