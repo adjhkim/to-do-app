@@ -36,7 +36,7 @@ export function HomePage() {
     {
       id: '1',
       content: 'first to-do',
-      completed: true,
+      completed: false,
       editing: false,
     },
     {
@@ -48,8 +48,8 @@ export function HomePage() {
     {
       id: '3',
       content: 'third to-do',
-      completed: true,
-      editing: false,
+      completed: false,
+      editing: true,
     },
   ]);
 
